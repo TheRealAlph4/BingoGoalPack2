@@ -59,7 +59,7 @@
       <HintPath>$(HollowKnightRefs)/Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="BingoSync">
-      <HintPath>$(HollowKnightRefs)/Mods/BingoSync/BingoSync.dll</HintPath>
+      <HintPath>..\_dependencies\BingoSync.dll</HintPath>
     </Reference>
     <Reference Include="GalaxyCSharp">
       <HintPath>$(HollowKnightRefs)/GalaxyCSharp.dll</HintPath>
