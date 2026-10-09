@@ -1,13 +1,12 @@
-﻿using BingoSync.CustomGoals;
-using BingoSync.Interfaces;
-using Modding;
+﻿using Modding;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
-
+using BingoSync.CustomGoals;
+using BingoSync.Interfaces;
 
 namespace BingoGoalPack2 {
     public class BingoGoalPack2: Mod {
@@ -18,8 +17,7 @@ namespace BingoGoalPack2 {
             OrderedLoader.OnReadyForGoalsGameModes += SetupGoalsGameModes;
         }
 
-        private void SetupGoalsGameModes(object _, EventArgs __)
-        {
+        private void SetupGoalsGameModes(object _, EventArgs __) {
             Assembly assembly = Assembly.GetExecutingAssembly();
 
             Dictionary<string, BingoGoal> myGoals = processEmbeddedJson(assembly, "Goals");
