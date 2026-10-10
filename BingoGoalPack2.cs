@@ -21,7 +21,6 @@ namespace BingoGoalPack2 {
             Assembly assembly = Assembly.GetExecutingAssembly();
 
             Dictionary<string, BingoGoal> myGoals = processEmbeddedJson(assembly, "Goals");
-            IGameMode mode = new SimpleGameMode("GoalPack2", myGoals);
             Goals.RegisterGoalsForCustom("Goal Pack 2", myGoals);
         }
 
